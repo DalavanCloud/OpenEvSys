@@ -39,7 +39,7 @@ if (!isset($_GET['img_only'])) {
             <script type="text/javascript" src="res/jquery/tinymce/4.0b3/plugins/filemanager/js/include.js"></script>
     </head>
     <body style="padding-top:0px;">
-        <input type="hidden" id="track" value="<?php echo $_GET['editor']; ?>" />
+        <input type="hidden" id="track" value="<?php echo htmlspecialchars($_GET['editor']); ?>" />
         <input type="hidden" id="insert_folder_name" value="<?php echo _t('Insert folder name:'); ?>" />
 
         <!----- uploader div start ------->
